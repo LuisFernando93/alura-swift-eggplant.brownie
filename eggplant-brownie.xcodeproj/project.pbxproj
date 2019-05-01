@@ -16,6 +16,7 @@
 		7E4423F122404A89006177F6 /* eggplant_brownieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4423F022404A89006177F6 /* eggplant_brownieUITests.swift */; };
 		7ED462732245A252009C3804 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED462722245A252009C3804 /* Meal.swift */; };
 		7ED462752245A285009C3804 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED462742245A285009C3804 /* Item.swift */; };
+		CFEC2328227A226E00E48428 /* MealsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEC2327227A226E00E48428 /* MealsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		7E4423F222404A89006177F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7ED462722245A252009C3804 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		7ED462742245A285009C3804 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		CFEC2327227A226E00E48428 /* MealsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MealsTableViewController.swift; path = "eggplant-brownie/viewcontrollers/MealsTableViewController.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 		7ED4626F2245A22A009C3804 /* viewcontrollers */ = {
 			isa = PBXGroup;
 			children = (
+				CFEC2327227A226E00E48428 /* MealsTableViewController.swift */,
 				7E4423D222404A87006177F6 /* ViewController.swift */,
 			);
 			path = viewcontrollers;
@@ -286,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFEC2328227A226E00E48428 /* MealsTableViewController.swift in Sources */,
 				7ED462752245A285009C3804 /* Item.swift in Sources */,
 				7E4423D322404A87006177F6 /* ViewController.swift in Sources */,
 				7ED462732245A252009C3804 /* Meal.swift in Sources */,
