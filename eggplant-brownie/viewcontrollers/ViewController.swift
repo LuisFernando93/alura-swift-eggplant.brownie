@@ -24,6 +24,9 @@ class ViewController: UIViewController {
             
             let meal = Meal(name: name, happiness: happiness)
             print("eaten \(meal.name) with happiness \(meal.happiness)!")
+            if let navigation = navigationController {
+                navigation.popViewController(animated: true)
+            }
             
         } else {
             print("insert a valid value for happiness")
