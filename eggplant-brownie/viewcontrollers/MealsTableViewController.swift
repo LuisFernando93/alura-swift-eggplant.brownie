@@ -16,6 +16,7 @@ class MealsTableViewController: UITableViewController {
     
     func add(meal: Meal) {
         meals.append(meal)
+        tableView.reloadData()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
