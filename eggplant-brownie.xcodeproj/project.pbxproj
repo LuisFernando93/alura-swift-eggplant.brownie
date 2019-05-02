@@ -16,7 +16,7 @@
 		7E4423F122404A89006177F6 /* eggplant_brownieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4423F022404A89006177F6 /* eggplant_brownieUITests.swift */; };
 		7ED462732245A252009C3804 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED462722245A252009C3804 /* Meal.swift */; };
 		7ED462752245A285009C3804 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED462742245A285009C3804 /* Item.swift */; };
-		CF90848E227B8FCC0039D292 /* ViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF90848D227B8FCC0039D292 /* ViewControllerDelegate.swift */; };
+		CF90848E227B8FCC0039D292 /* AddAMealDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF90848D227B8FCC0039D292 /* AddAMealDelegate.swift */; };
 		CFEC2328227A226E00E48428 /* MealsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEC2327227A226E00E48428 /* MealsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,7 +53,7 @@
 		7E4423F222404A89006177F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7ED462722245A252009C3804 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		7ED462742245A285009C3804 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
-		CF90848D227B8FCC0039D292 /* ViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDelegate.swift; sourceTree = "<group>"; };
+		CF90848D227B8FCC0039D292 /* AddAMealDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAMealDelegate.swift; sourceTree = "<group>"; };
 		CFEC2327227A226E00E48428 /* MealsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MealsTableViewController.swift; path = "eggplant-brownie/viewcontrollers/MealsTableViewController.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -156,7 +156,7 @@
 			children = (
 				7ED462722245A252009C3804 /* Meal.swift */,
 				7ED462742245A285009C3804 /* Item.swift */,
-				CF90848D227B8FCC0039D292 /* ViewControllerDelegate.swift */,
+				CF90848D227B8FCC0039D292 /* AddAMealDelegate.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -297,7 +297,7 @@
 				7E4423D322404A87006177F6 /* ViewController.swift in Sources */,
 				7ED462732245A252009C3804 /* Meal.swift in Sources */,
 				7E4423D122404A87006177F6 /* AppDelegate.swift in Sources */,
-				CF90848E227B8FCC0039D292 /* ViewControllerDelegate.swift in Sources */,
+				CF90848E227B8FCC0039D292 /* AddAMealDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
