@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     
     @IBOutlet var nameField: UITextField?;
     @IBOutlet var happinessField: UITextField?;
-    var delegate: MealsTableViewController?
+    var delegate: ViewControllerDelegate?
     
     @IBAction func add() {
         
