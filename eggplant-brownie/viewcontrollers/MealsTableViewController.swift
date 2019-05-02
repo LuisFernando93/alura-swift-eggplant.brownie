@@ -14,14 +14,16 @@ class MealsTableViewController: UITableViewController {
                  Meal(name: "Zucchini Muffin", happiness: 3),
                  Meal(name: "Daniela's Cheesecake", happiness: 5)]
     
-    func add(meal: Meal) {
+    func add(_ meal: Meal) { //o underline indica que no primeiro parametro nao precisa especificar o tipo
         meals.append(meal)
         tableView.reloadData()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let view = segue.destination as! ViewController
-        view.mealsTable = self
+        if(segue.identifier == "addMeal") {
+            let view = segue.destination as! ViewController
+            view.mealsTable = self
+        }
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
