@@ -13,6 +13,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet var nameField: UITextField?;
     @IBOutlet var happinessField: UITextField?;
     var delegate: AddAMealDelegate?
+    var selected: Array<Item> = []
+    
     var items = [
         Item(name: "Eggplant", calories: 10),
         Item(name: "Brownie", calories: 10),
@@ -39,6 +41,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         if let cell = tableView.cellForRow(at: indexPath) {
             if cell.accessoryType == UITableViewCell.AccessoryType.none{
                 cell.accessoryType = UITableViewCell.AccessoryType.checkmark
+                let item = items[indexPath.row]
+                selected.append(item)
             }else{
                 cell.accessoryType = UITableViewCell.AccessoryType.none
             }
@@ -54,8 +58,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let name: String = nameField!.text!;
         if let happiness = Int(happinessField!.text!) {
             
-            let meal = Meal(name: name, happiness: happiness)
-            print("eaten \(meal.name) with happiness \(meal.happiness)!")
+            let meal = Meal(name: name, happiness: happiness, items: selected)
+            print("Eaten \(meal.name), with happiness \(meal.happiness) and itens: \(meal.items)")
             
             if (delegate == nil) {
                 return
