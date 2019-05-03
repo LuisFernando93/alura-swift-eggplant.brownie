@@ -45,6 +45,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 selected.append(item)
             }else{
                 cell.accessoryType = UITableViewCell.AccessoryType.none
+                let item = items[indexPath.row]
+                let position = selected.index(of: item)
+                selected.remove(at: position!)
             }
         }
     }
