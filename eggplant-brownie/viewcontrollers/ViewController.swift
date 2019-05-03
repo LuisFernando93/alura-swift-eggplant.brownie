@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet var nameField: UITextField?;
     @IBOutlet var happinessField: UITextField?;
@@ -33,6 +33,16 @@ class ViewController: UIViewController, UITableViewDataSource {
         let cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: nil)
         cell.textLabel?.text = item.name
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let cell = tableView.cellForRow(at: indexPath) {
+            if cell.accessoryType == UITableViewCell.AccessoryType.none{
+                cell.accessoryType = UITableViewCell.AccessoryType.checkmark
+            }else{
+                cell.accessoryType = UITableViewCell.AccessoryType.none
+            }
+        }
     }
     
     @IBAction func add() {
