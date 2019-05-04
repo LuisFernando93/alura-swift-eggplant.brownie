@@ -45,6 +45,9 @@
                     <rect key="frame" x="183" y="224" width="30" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Add"/>
+                    <connections>
+                        <action selector="addNewItem" destination="-1" eventType="touchUpInside" id="PFF-si-0Up"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calories:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ivH-0a-ZlH">
                     <rect key="frame" x="45" y="157" width="67" height="21"/>

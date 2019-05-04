@@ -31,7 +31,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     @objc func showNewItem() {
-        print("novo item")
+        let newItem = NewItemViewController(nibName: "NewItemViewController", bundle: nil)
+        if let navigation = navigationController {
+            navigation.pushViewController(newItem, animated: true)
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
