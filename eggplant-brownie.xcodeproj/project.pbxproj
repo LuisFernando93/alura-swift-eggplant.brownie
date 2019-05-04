@@ -238,13 +238,16 @@
 				TargetAttributes = {
 					7E4423CC22404A87006177F6 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 					7E4423E022404A89006177F6 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 7E4423CC22404A87006177F6;
 					};
 					7E4423EB22404A89006177F6 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 7E4423CC22404A87006177F6;
 					};
 				};
@@ -493,7 +496,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.luis.eggplant-brownie";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -511,7 +514,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.luis.eggplant-brownie";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -531,7 +534,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.luis.eggplant-brownieTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eggplant-brownie.app/eggplant-brownie";
 			};
@@ -552,7 +555,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.luis.eggplant-brownieTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eggplant-brownie.app/eggplant-brownie";
 			};
@@ -572,7 +575,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.luis.eggplant-brownieUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "eggplant-brownie";
 			};
@@ -592,7 +595,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.luis.eggplant-brownieUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "eggplant-brownie";
 			};

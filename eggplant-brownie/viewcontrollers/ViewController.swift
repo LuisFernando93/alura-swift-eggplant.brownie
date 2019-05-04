@@ -66,7 +66,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             }else{
                 cell.accessoryType = UITableViewCell.AccessoryType.none
                 let item = items[indexPath.row]
-                let position = selected.index(of: item)
+                let position = selected.firstIndex(of: item)
                 selected.remove(at: position!)
             }
         }
