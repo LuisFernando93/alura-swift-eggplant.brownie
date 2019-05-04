@@ -25,6 +25,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         Item(name: "Chocolate chip", calories: 1000),
     ]
     
+    override func viewDidLoad() {
+        let newItemButton = UIBarButtonItem(title: "New item", style: UIBarButtonItem.Style.plain, target: self, action: #selector(showNewItem))
+        navigationItem.rightBarButtonItem = newItemButton
+    }
+    
+    @objc func showNewItem() {
+        print("novo item")
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
     }
