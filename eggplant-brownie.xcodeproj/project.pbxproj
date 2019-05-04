@@ -20,6 +20,7 @@
 		CFEC2328227A226E00E48428 /* MealsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEC2327227A226E00E48428 /* MealsTableViewController.swift */; };
 		CFEC8436227E1A0A0012CE5A /* NewItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEC8434227E1A0A0012CE5A /* NewItemViewController.swift */; };
 		CFEC8437227E1A0A0012CE5A /* NewItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFEC8435227E1A0A0012CE5A /* NewItemViewController.xib */; };
+		CFEC8439227E2D700012CE5A /* AddAnItemDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEC8438227E2D700012CE5A /* AddAnItemDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		CFEC2327227A226E00E48428 /* MealsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MealsTableViewController.swift; path = "eggplant-brownie/viewcontrollers/MealsTableViewController.swift"; sourceTree = SOURCE_ROOT; };
 		CFEC8434227E1A0A0012CE5A /* NewItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemViewController.swift; sourceTree = "<group>"; };
 		CFEC8435227E1A0A0012CE5A /* NewItemViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewItemViewController.xib; sourceTree = "<group>"; };
+		CFEC8438227E2D700012CE5A /* AddAnItemDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAnItemDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 				7ED462722245A252009C3804 /* Meal.swift */,
 				7ED462742245A285009C3804 /* Item.swift */,
 				CF90848D227B8FCC0039D292 /* AddAMealDelegate.swift */,
+				CFEC8438227E2D700012CE5A /* AddAnItemDelegate.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				7ED462752245A285009C3804 /* Item.swift in Sources */,
 				7E4423D322404A87006177F6 /* ViewController.swift in Sources */,
 				7ED462732245A252009C3804 /* Meal.swift in Sources */,
+				CFEC8439227E2D700012CE5A /* AddAnItemDelegate.swift in Sources */,
 				7E4423D122404A87006177F6 /* AppDelegate.swift in Sources */,
 				CF90848E227B8FCC0039D292 /* AddAMealDelegate.swift in Sources */,
 				CFEC8436227E1A0A0012CE5A /* NewItemViewController.swift in Sources */,
