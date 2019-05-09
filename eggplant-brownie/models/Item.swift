@@ -18,6 +18,10 @@ class Item: Equatable {
         self.calories = calories
     }
     
+    func details() -> String {
+        let message = "\(name) - Calories: \(calories)"
+        return message
+    }
 }
 
 func ==(first: Item, second: Item) -> Bool {

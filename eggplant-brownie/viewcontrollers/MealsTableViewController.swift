@@ -48,11 +48,7 @@ class MealsTableViewController: UITableViewController, AddAMealDelegate {
             if let indexPath = tableView.indexPath(for: cell) {
                 let row = indexPath.row
                 let meal = meals[row]
-                var message = "Happiness: \(meal.happiness)"
-                for item in meal.items {
-                    message += "\n\(item.name) - Calories: \(item.calories)"
-                }
-                let details = UIAlertController(title: meal.name, message: message, preferredStyle: UIAlertController.Style.alert)
+                let details = UIAlertController(title: meal.name, message: meal.details(), preferredStyle: UIAlertController.Style.alert)
                 let ok = UIAlertAction(title: "Ok", style: UIAlertAction.Style.cancel, handler: nil)
                 details.addAction(ok)
                 present(details, animated: true, completion: nil)
