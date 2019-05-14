@@ -21,6 +21,7 @@
 		CFEC8436227E1A0A0012CE5A /* NewItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEC8434227E1A0A0012CE5A /* NewItemViewController.swift */; };
 		CFEC8437227E1A0A0012CE5A /* NewItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFEC8435227E1A0A0012CE5A /* NewItemViewController.xib */; };
 		CFEC8439227E2D700012CE5A /* AddAnItemDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEC8438227E2D700012CE5A /* AddAnItemDelegate.swift */; };
+		CFED9F99228B6F2A006501CE /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFED9F98228B6F2A006501CE /* Alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		CFEC8434227E1A0A0012CE5A /* NewItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemViewController.swift; sourceTree = "<group>"; };
 		CFEC8435227E1A0A0012CE5A /* NewItemViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewItemViewController.xib; sourceTree = "<group>"; };
 		CFEC8438227E2D700012CE5A /* AddAnItemDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAnItemDelegate.swift; sourceTree = "<group>"; };
+		CFED9F98228B6F2A006501CE /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 				7ED462742245A285009C3804 /* Item.swift */,
 				CF90848D227B8FCC0039D292 /* AddAMealDelegate.swift */,
 				CFEC8438227E2D700012CE5A /* AddAnItemDelegate.swift */,
+				CFED9F98228B6F2A006501CE /* Alert.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFED9F99228B6F2A006501CE /* Alert.swift in Sources */,
 				CFEC2328227A226E00E48428 /* MealsTableViewController.swift in Sources */,
 				7ED462752245A285009C3804 /* Item.swift in Sources */,
 				7E4423D322404A87006177F6 /* ViewController.swift in Sources */,
