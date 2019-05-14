@@ -79,31 +79,41 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
     }
     
+    func convertToInt(_ texto: String?) -> Int? {
+        if let texto = texto {
+            if let numero = Int(texto) {
+                return numero
+            }
+        }
+        return nil
+    }
+    
+    func getMealFromForm() -> Meal? {
+        
+        if let name = nameField?.text {
+            if let happiness = convertToInt(happinessField?.text) {
+                let meal = Meal(name: name, happiness: happiness, items: selected)
+                print("Eaten \(meal.name), with happiness \(meal.happiness) and itens: \(meal.items)")
+                return meal
+            }
+        }
+        return nil
+    }
+    
     @IBAction func add() {
         
-        if (nameField == nil || happinessField == nil) {
-            return
-        }
-        
-        let name: String = nameField!.text!;
-        if let happiness = Int(happinessField!.text!) {
-            
-            let meal = Meal(name: name, happiness: happiness, items: selected)
-            print("Eaten \(meal.name), with happiness \(meal.happiness) and itens: \(meal.items)")
-            
-            if (delegate == nil) {
+        if let meal = getMealFromForm() {
+            if let meals = delegate {
+                meals.add(meal)
+                if let navigation = navigationController {
+                    navigation.popViewController(animated: true)
+                } else {
+                    Alert(controller: self).show(message: "Unable to go back, but the meal was added.")
+                }
                 return
             }
-            delegate?.add(meal)
-            
-            if let navigation = navigationController {
-                navigation.popViewController(animated: true)
-            }
-            
-        } else {
-            print("insert a valid value for happiness")
         }
-        
+        Alert(controller: self).show()
     }
     
 }
