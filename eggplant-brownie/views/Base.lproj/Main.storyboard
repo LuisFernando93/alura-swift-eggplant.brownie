@@ -69,9 +69,9 @@
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <connections>
-                        <outlet property="happinessField" destination="5iW-8B-0DT" id="wHt-o5-ClW"/>
-                        <outlet property="nameField" destination="X2p-zy-ouW" id="rIm-yp-tOX"/>
-                        <outlet property="tableView" destination="Uh1-4V-F4a" id="9c9-eC-awb"/>
+                        <outlet property="happinessField" destination="5iW-8B-0DT" id="rLf-lQ-K8E"/>
+                        <outlet property="nameField" destination="X2p-zy-ouW" id="C37-s8-fje"/>
+                        <outlet property="tableView" destination="Uh1-4V-F4a" id="IxE-3e-mXQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
