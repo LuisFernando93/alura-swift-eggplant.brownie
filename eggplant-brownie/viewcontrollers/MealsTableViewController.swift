@@ -48,9 +48,21 @@ class MealsTableViewController: UITableViewController, AddAMealDelegate {
             if let indexPath = tableView.indexPath(for: cell) {
                 let row = indexPath.row
                 let meal = meals[row]
+                
                 let details = UIAlertController(title: meal.name, message: meal.details(), preferredStyle: UIAlertController.Style.alert)
-                let ok = UIAlertAction(title: "Ok", style: UIAlertAction.Style.cancel, handler: nil)
-                details.addAction(ok)
+                
+                func removeSelected(action: UIAlertAction){
+                    print("Removed the selected one: \(meal.name)")
+                    meals.remove(at: row)
+                    tableView.reloadData()
+                }
+                
+                let cancel = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: nil)
+                let remove = UIAlertAction(title: "Remove", style: UIAlertAction.Style.destructive, handler: removeSelected)
+                
+                details.addAction(cancel)
+                details.addAction(remove)
+                
                 present(details, animated: true, completion: nil)
             }
         }
