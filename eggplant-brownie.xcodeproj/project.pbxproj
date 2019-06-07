@@ -16,6 +16,7 @@
 		7E4423F122404A89006177F6 /* eggplant_brownieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4423F022404A89006177F6 /* eggplant_brownieUITests.swift */; };
 		7ED462732245A252009C3804 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED462722245A252009C3804 /* Meal.swift */; };
 		7ED462752245A285009C3804 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED462742245A285009C3804 /* Item.swift */; };
+		CF32400922AB11C7001188D5 /* RemoveMealController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF32400822AB11C7001188D5 /* RemoveMealController.swift */; };
 		CF90848E227B8FCC0039D292 /* AddAMealDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF90848D227B8FCC0039D292 /* AddAMealDelegate.swift */; };
 		CFEC2328227A226E00E48428 /* MealsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEC2327227A226E00E48428 /* MealsTableViewController.swift */; };
 		CFEC8436227E1A0A0012CE5A /* NewItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEC8434227E1A0A0012CE5A /* NewItemViewController.swift */; };
@@ -57,6 +58,7 @@
 		7E4423F222404A89006177F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7ED462722245A252009C3804 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		7ED462742245A285009C3804 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		CF32400822AB11C7001188D5 /* RemoveMealController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveMealController.swift; sourceTree = "<group>"; };
 		CF90848D227B8FCC0039D292 /* AddAMealDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAMealDelegate.swift; sourceTree = "<group>"; };
 		CFEC2327227A226E00E48428 /* MealsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MealsTableViewController.swift; path = "eggplant-brownie/viewcontrollers/MealsTableViewController.swift"; sourceTree = SOURCE_ROOT; };
 		CFEC8434227E1A0A0012CE5A /* NewItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemViewController.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 			children = (
 				7E4423D422404A87006177F6 /* Main.storyboard */,
 				CFEC8435227E1A0A0012CE5A /* NewItemViewController.xib */,
+				CF32400822AB11C7001188D5 /* RemoveMealController.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF32400922AB11C7001188D5 /* RemoveMealController.swift in Sources */,
 				CFED9F99228B6F2A006501CE /* Alert.swift in Sources */,
 				CFEC2328227A226E00E48428 /* MealsTableViewController.swift in Sources */,
 				7ED462752245A285009C3804 /* Item.swift in Sources */,

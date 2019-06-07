@@ -49,21 +49,10 @@ class MealsTableViewController: UITableViewController, AddAMealDelegate {
                 let row = indexPath.row
                 let meal = meals[row]
                 
-                let details = UIAlertController(title: meal.name, message: meal.details(), preferredStyle: UIAlertController.Style.alert)
-                
-                func removeSelected(action: UIAlertAction){
-                    print("Removed the selected one: \(meal.name)")
-                    meals.remove(at: row)
-                    tableView.reloadData()
-                }
-                
-                let cancel = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: nil)
-                let remove = UIAlertAction(title: "Remove", style: UIAlertAction.Style.destructive, handler: removeSelected)
-                
-                details.addAction(cancel)
-                details.addAction(remove)
-                
-                present(details, animated: true, completion: nil)
+                RemoveMealController(controller: self).show(meal, handler: { action in
+                    self.meals.remove(at: row)
+                    self.tableView.reloadData()
+                    })
             }
         }
     }
