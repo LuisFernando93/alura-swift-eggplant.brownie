@@ -10,47 +10,16 @@ import UIKit
 
 class MealsTableViewController: UITableViewController, AddAMealDelegate {
     
-    var meals = [Meal(name: "Eggplant Brownie", happiness: 5),
-                 Meal(name: "Zucchini Muffin", happiness: 3),
-                 Meal(name: "Daniela's Cheesecake", happiness: 5)]
+    var meals: Array<Meal> = []
     
     override func viewDidLoad() {
-        loadMeals()
+        self.meals = Dao().load()
     }
     
-    func getDocumentsDirectory() -> URL {
-        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        return paths[0]
-    }
-    
-    func getURLMeals() -> URL {
-        return getDocumentsDirectory().appendingPathComponent("meals_info.dados")
-    }
-    
-    func saveMeals() {
-        do {
-            let path = getURLMeals()
-            let data = try NSKeyedArchiver.archivedData(withRootObject: meals, requiringSecureCoding: false)
-            try data.write(to: path)
-        } catch {
-            print("Couldn't write file")
-        }
-    }
-    
-    func loadMeals() {
-        do {
-            let data = try Data(contentsOf: getURLMeals())
-            if let savedMeals = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(data) as? Array<Meal> {
-                meals = savedMeals
-            }
-        } catch {
-            print("Couldn't read file.")
-        }
-    }
     
     func add(_ meal: Meal) { //o underline indica que no primeiro parametro nao precisa especificar o tipo
         meals.append(meal)
-        saveMeals()
+        Dao().save(meals)
         tableView.reloadData()
     }
     

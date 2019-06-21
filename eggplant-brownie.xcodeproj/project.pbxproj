@@ -18,6 +18,7 @@
 		7ED462752245A285009C3804 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED462742245A285009C3804 /* Item.swift */; };
 		CF32400922AB11C7001188D5 /* RemoveMealController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF32400822AB11C7001188D5 /* RemoveMealController.swift */; };
 		CF90848E227B8FCC0039D292 /* AddAMealDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF90848D227B8FCC0039D292 /* AddAMealDelegate.swift */; };
+		CFBEBBB222BD8991008B8980 /* Dao.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBEBBB122BD8991008B8980 /* Dao.swift */; };
 		CFEC2328227A226E00E48428 /* MealsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEC2327227A226E00E48428 /* MealsTableViewController.swift */; };
 		CFEC8436227E1A0A0012CE5A /* NewItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEC8434227E1A0A0012CE5A /* NewItemViewController.swift */; };
 		CFEC8437227E1A0A0012CE5A /* NewItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFEC8435227E1A0A0012CE5A /* NewItemViewController.xib */; };
@@ -60,6 +61,7 @@
 		7ED462742245A285009C3804 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		CF32400822AB11C7001188D5 /* RemoveMealController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveMealController.swift; sourceTree = "<group>"; };
 		CF90848D227B8FCC0039D292 /* AddAMealDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAMealDelegate.swift; sourceTree = "<group>"; };
+		CFBEBBB122BD8991008B8980 /* Dao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dao.swift; sourceTree = "<group>"; };
 		CFEC2327227A226E00E48428 /* MealsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MealsTableViewController.swift; path = "eggplant-brownie/viewcontrollers/MealsTableViewController.swift"; sourceTree = SOURCE_ROOT; };
 		CFEC8434227E1A0A0012CE5A /* NewItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemViewController.swift; sourceTree = "<group>"; };
 		CFEC8435227E1A0A0012CE5A /* NewItemViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewItemViewController.xib; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				CF90848D227B8FCC0039D292 /* AddAMealDelegate.swift */,
 				CFEC8438227E2D700012CE5A /* AddAnItemDelegate.swift */,
 				CFED9F98228B6F2A006501CE /* Alert.swift */,
+				CFBEBBB122BD8991008B8980 /* Dao.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 			files = (
 				CF32400922AB11C7001188D5 /* RemoveMealController.swift in Sources */,
 				CFED9F99228B6F2A006501CE /* Alert.swift in Sources */,
+				CFBEBBB222BD8991008B8980 /* Dao.swift in Sources */,
 				CFEC2328227A226E00E48428 /* MealsTableViewController.swift in Sources */,
 				7ED462752245A285009C3804 /* Item.swift in Sources */,
 				7E4423D322404A87006177F6 /* ViewController.swift in Sources */,
