@@ -26,8 +26,39 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         Item(name: "Chocolate chip", calories: 1000),
     ]
     
+    func getDocumentsDirectory() -> URL {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        return paths[0]
+    }
+    
+    func getURLItems() -> URL {
+        return getDocumentsDirectory().appendingPathComponent("items_info.dados")
+    }
+    
+    func saveItems() {
+        do {
+            let path = getURLItems()
+            let data = try NSKeyedArchiver.archivedData(withRootObject: items, requiringSecureCoding: false)
+            try data.write(to: path)
+        } catch {
+            print("Couldn't write file")
+        }
+    }
+    
+    func loadItems() {
+        do {
+            let data = try Data(contentsOf: getURLItems())
+            if let savedItems = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(data) as? Array<Item> {
+                items = savedItems
+            }
+        } catch {
+            print("Couldn't read file.")
+        }
+    }
+    
     func add(_ item: Item) {
         items.append(item)
+        saveItems()
         if let table = tableView {
             table.reloadData()
         } else {
@@ -38,6 +69,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         let newItemButton = UIBarButtonItem(title: "New item", style: UIBarButtonItem.Style.plain, target: self, action: #selector(showNewItem))
         navigationItem.rightBarButtonItem = newItemButton
+        loadItems()
     }
     
     @objc func showNewItem() {
